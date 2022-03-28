@@ -1,0 +1,26 @@
+﻿<Window x:Class="Music_Preview.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Music_Preview"
+        mc:Ignorable="d"
+        Title="Window5" Height="450" Width="800">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="58" Margin="8,11,0,0" VerticalAlignment="Top" Width="376"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,0,270,355" TextWrapping="Wrap" VerticalAlignment="Center" Height="57" Width="236" FontSize="36" FontFamily="Arial"><Run Language="pt-br" Text="Music Preview"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="0,0,700,355" TextWrapping="Wrap" VerticalAlignment="Center" Height="57" Width="60" FontSize="36" FontFamily="Arial"><Run Language="pt-br" Text="MP"/></TextBlock>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="58" Margin="0,0,-400,355" VerticalAlignment="Center" Width="376"/>
+        <Button Content="Sair" HorizontalAlignment="Center" Margin="0,0,-669,355" VerticalAlignment="Center" Height="56" Width="105" FontFamily="Arial"/>
+        <Button Content="Biblioteca" HorizontalAlignment="Center" Margin="0,0,-400,355" VerticalAlignment="Center" Height="56" Width="105" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,0,-150,355" TextWrapping="Wrap" VerticalAlignment="Center" Height="24" Width="116" IsEnabled="False" Text="NickName" FontSize="20" FontFamily="Arial"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="58" Margin="0,0,410,200" VerticalAlignment="Center" Width="376"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,0,519,200" TextWrapping="Wrap" VerticalAlignment="Center" Height="55" Width="262" TextAlignment="Right" FontFamily="Arial"><Run/><LineBreak/><Run Text="Todo o o catálogo de músicas em Instrumental"/><Run Text="!"/><Run Text="  "/></TextBlock>
+        <Button Content="Clique Aqui!" HorizontalAlignment="Center" Margin="0,0,141,200" VerticalAlignment="Center" Height="56" Width="105"/>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" Height="58" Margin="0,0,-400,200" VerticalAlignment="Center" Width="376"/>
+        <Button Content="Seu carrinho de compras está aqui!" HorizontalAlignment="Center" Margin="0,0,-286,200" VerticalAlignment="Center" Height="56" Width="260" FontFamily="Arial"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,0,-660,239" TextWrapping="Wrap" VerticalAlignment="Center" Height="15" Width="113" Text="Valor Total" IsEnabled="False" TextAlignment="Center" FontFamily="Arial"/>
+
+
+    </Grid>
+</Window>

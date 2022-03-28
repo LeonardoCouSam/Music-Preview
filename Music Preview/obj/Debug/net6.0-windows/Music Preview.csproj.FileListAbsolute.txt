@@ -1,0 +1,21 @@
+C:\Users\leona\source\repos\Music Preview\Music Preview\bin\Debug\net6.0-windows\Music Preview.exe
+C:\Users\leona\source\repos\Music Preview\Music Preview\bin\Debug\net6.0-windows\Music Preview.deps.json
+C:\Users\leona\source\repos\Music Preview\Music Preview\bin\Debug\net6.0-windows\Music Preview.runtimeconfig.json
+C:\Users\leona\source\repos\Music Preview\Music Preview\bin\Debug\net6.0-windows\Music Preview.dll
+C:\Users\leona\source\repos\Music Preview\Music Preview\bin\Debug\net6.0-windows\ref\Music Preview.dll
+C:\Users\leona\source\repos\Music Preview\Music Preview\bin\Debug\net6.0-windows\Music Preview.pdb
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\Music Preview.csproj.AssemblyReference.cache
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\Music Preview_MarkupCompile.cache
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\Music Preview_MarkupCompile.lref
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\Music Preview.g.resources
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\Music Preview.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\Music Preview.AssemblyInfoInputs.cache
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\Music Preview.AssemblyInfo.cs
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\Music Preview.csproj.CoreCompileInputs.cache
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\Music Preview.dll
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\ref\Music Preview.dll
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\Music Preview.pdb
+C:\Users\leona\source\repos\Music Preview\Music Preview\obj\Debug\net6.0-windows\Music Preview.genruntimeconfig.cache
