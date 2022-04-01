@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Login" Height="550" Width="500">
     <Grid>
-        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="105" Width="331" FontSize="48" Margin="0,0,0,200" FontWeight="Bold" IsEnabled="False" FontFamily="Arial"><Run Language="pt-br" Text="Music Preview"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="105" Width="330" FontSize="48" Margin="0,0,-25,200" FontWeight="Bold" IsEnabled="False" FontFamily="Microsoft JhengHei Light" Text="Music Preview"/>
         <TextBox HorizontalAlignment="Center" Margin="0,0,0,50" TextWrapping="Wrap" Text="Conta" VerticalAlignment="Center" Width="276" TextChanged="TextBox_TextChanged" Height="40" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
         <TextBox HorizontalAlignment="Center" Margin="0,0,0,-70" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Center" Width="276" TextChanged="TextBox_TextChanged" Height="40" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
         <Button Content="Entrar" HorizontalAlignment="Center" Margin="0,0,0,-190" VerticalAlignment="Center" Height="40" Width="277" FontSize="24"/>

@@ -23,5 +23,30 @@ namespace Music_Preview
         {
             InitializeComponent();
         }
+
+        private void Button_Click_Suporte(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_Biblioteca(object sender, MouseButtonEventArgs e)
+        {
+            
+        }
+
+        private void Button_Click_Sair(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_FinalizarCompra(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
