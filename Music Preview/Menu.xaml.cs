@@ -48,5 +48,10 @@ namespace Music_Preview
         {
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
