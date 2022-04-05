@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c43772f7-5c5d-406e-8882-12f5595c4059": {
+      "ProjectGuid": "c43772f7-5c5d-406e-8882-12f5595c4059",
+      "DisplayName": "Music Preview",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

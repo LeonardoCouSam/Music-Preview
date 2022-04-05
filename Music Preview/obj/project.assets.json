@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\leona\\source\\repos\\Music Preview\\Music Preview\\Music Preview.csproj",
+      "projectUniqueName": "C:\\Users\\leona\\Source\\Repos\\LeonardoCouSam\\Music-Preview\\Music Preview\\Music Preview.csproj",
       "projectName": "Music Preview",
-      "projectPath": "C:\\Users\\leona\\source\\repos\\Music Preview\\Music Preview\\Music Preview.csproj",
+      "projectPath": "C:\\Users\\leona\\Source\\Repos\\LeonardoCouSam\\Music-Preview\\Music Preview\\Music Preview.csproj",
       "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\leona\\source\\repos\\Music Preview\\Music Preview\\obj\\",
+      "outputPath": "C:\\Users\\leona\\Source\\Repos\\LeonardoCouSam\\Music-Preview\\Music Preview\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="Esqueci senha02" Height="550" Width="600">
     <Grid>
-        <Grid>
-            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="140" Width="601" FontSize="48" Margin="0,0,0,350" FontWeight="Bold" IsEnabled="False" FontFamily="Microsoft YaHei Light" TextAlignment="Center"><Run Language="pt-br" Text="Cadastro"/></TextBlock>
+        <Grid Background="#FF1F1E1E">
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="140" Width="601" FontSize="48" Margin="0,0,0,350" FontWeight="Bold" IsEnabled="False" FontFamily="Microsoft YaHei Light" TextAlignment="Center" Foreground="White"><Run Language="pt-br" Text="Cadastro"/></TextBlock>
             <TextBox HorizontalAlignment="Center" Margin="0,0,0,-50" TextWrapping="Wrap" Text="Código" VerticalAlignment="Center" Width="396" TextChanged="TextBox_TextChanged" Height="54" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
-            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,150" TextWrapping="Wrap" VerticalAlignment="Center" Height="41" Width="393" FontSize="22" TextAlignment="Center"><Run Text="Insira"/><Run Language="pt-br" Text=" o código enviado ao seu email"/></TextBlock>
+            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,150" TextWrapping="Wrap" VerticalAlignment="Center" Height="41" Width="393" FontSize="22" TextAlignment="Center" Foreground="White"><Run Text="Insira"/><Run Language="pt-br" Text=" o código enviado ao seu email"/></TextBlock>
 
         </Grid>
-        <Button Content="Enviar" HorizontalAlignment="Center" Margin="0,390,0,0" VerticalAlignment="Top" Height="54" Width="398" FontSize="24"/>
+        <Button Content="Enviar" HorizontalAlignment="Center" Margin="0,390,0,0" VerticalAlignment="Top" Height="54" Width="398" FontSize="24" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White"/>
 
     </Grid>
 </Window>
