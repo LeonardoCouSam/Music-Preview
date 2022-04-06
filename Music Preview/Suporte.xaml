@@ -1,0 +1,17 @@
+﻿<Window x:Class="Music_Preview.Suporte"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Music_Preview"
+        mc:Ignorable="d"
+        Title="Suporte" Height="650" Width="600">
+    <Grid Background="#FF1F1E1E">
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="140" Width="601" FontSize="48" Margin="0,22,0,0" FontWeight="Bold" IsEnabled="False" FontFamily="Microsoft YaHei Light" TextAlignment="Center" Foreground="White"><Run Language="pt-br" Text="Suporte"/></TextBlock>
+        <TextBox HorizontalAlignment="Center" Margin="0,0,0,250" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center" Width="396" TextChanged="TextBox_TextChanged" Height="54" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,0,0,100" TextWrapping="Wrap" Text="Assunto" VerticalAlignment="Center" Width="396" TextChanged="TextBox_TextChanged" Height="54" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
+        <TextBox HorizontalAlignment="Center" Margin="0,0,0,-150" TextWrapping="Wrap" Text="Mensagem" VerticalAlignment="Center" Width="396" TextChanged="TextBox_TextChanged" Height="150" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
+        <Button Content="Enviar" HorizontalAlignment="Center" Margin="0,0,0,-450" VerticalAlignment="Center" Height="54" Width="398" FontSize="24" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White"/>
+
+    </Grid>
+</Window>
