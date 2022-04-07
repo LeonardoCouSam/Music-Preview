@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="Compra" Height="450" Width="800">
     <Grid Background="#FF1F1E1E">
-        <TextBlock HorizontalAlignment="Center" Height="68" Margin="0,0,-150,350" TextWrapping="Wrap" VerticalAlignment="Center" Width="436" Foreground="#FFF7F7F7" FontSize="48"><Run Language="pt-br" Text="Pagamento"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Height="68" Margin="0,0,-170,350" TextWrapping="Wrap" VerticalAlignment="Center" Width="436" Foreground="#FFF7F7F7" FontSize="48"><Run Language="pt-br" Text="Pagamento"/></TextBlock>
         <TextBlock HorizontalAlignment="Center" Height="38" Margin="0,0,450,150" TextWrapping="Wrap" VerticalAlignment="Center" Width="263" Foreground="White" FontSize="30"><Run Language="pt-br" Text="Cartão de Crédito"/></TextBlock>
         <TextBlock HorizontalAlignment="Center" Height="36" Margin="0,0,-500,150" TextWrapping="Wrap" VerticalAlignment="Center" Width="302" Foreground="White" FontSize="30"><Run Language="pt-br" Text="Boleto"/></TextBlock>
         <TextBox HorizontalAlignment="Center" Height="31" Margin="0,0,460,20" TextWrapping="Wrap" Text="Número do Cartão" VerticalAlignment="Center" Width="299" Background="{x:Null}" BorderBrush="Gray" Foreground="Gray"/>
         <TextBox HorizontalAlignment="Center" Height="36" Margin="0,0,460,-60" TextWrapping="Wrap" Text="Nome Completo" VerticalAlignment="Center" Width="299" Background="{x:Null}" BorderBrush="Gray" Foreground="Gray"/>
         <TextBox HorizontalAlignment="Center" Height="32" Margin="0,0,608,-140" TextWrapping="Wrap" Text="Validade" VerticalAlignment="Center" Width="150" Background="{x:Null}" BorderBrush="Gray" Foreground="Gray"/>
         <TextBox HorizontalAlignment="Center" Height="32" Margin="0,0,608,-220" TextWrapping="Wrap" Text="Código de Segurança" VerticalAlignment="Center" Width="150" Background="{x:Null}" BorderBrush="Gray" Foreground="Gray"/>
-        <Button Content="Fechar Pedido" HorizontalAlignment="Center" Height="35" Margin="0,0,0,-350" VerticalAlignment="Center" Width="215" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White" FontSize="20"/>
+        <Button Content="Fechar Pedido" HorizontalAlignment="Center" Height="35" Margin="0,0,0,-350" VerticalAlignment="Center" Width="215" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White" FontSize="20" FontWeight="Bold"/>
         <TextBlock HorizontalAlignment="Left" Height="41" Margin="434,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318" Foreground="White"><Run Language="pt-br" Text="Imprimir boleto e pague no banco"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Height="44" Margin="434,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" Foreground="White"><Run Language="pt-br" Text="Prazo de Validade do Boleto é de 1 (UM) dia"/></TextBlock>
 
