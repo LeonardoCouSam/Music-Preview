@@ -17,7 +17,6 @@
             <TextBlock HorizontalAlignment="Center" Height="19" Margin="0,0,130,35" TextWrapping="Wrap" VerticalAlignment="Center" Width="219" Foreground="White"><Run Language="pt-br" Text="Seu carrinho de compras está aqui!"/><LineBreak/><Run Language="pt-br"/></TextBlock>
         </Border>
         <TextBlock HorizontalAlignment="Center" Margin="0,0,-660,239" TextWrapping="Wrap" VerticalAlignment="Center" Height="15" Width="113" Text="Valor Total" IsEnabled="False" TextAlignment="Center" FontFamily="Arial" Foreground="White"/>
-        <Image HorizontalAlignment="Center" Height="76" Margin="0,0,740,350" VerticalAlignment="Center" Width="97" Source="/Music Preview Logo V3.png"/>
         <TextBlock x:Name="Biblioteca" HorizontalAlignment="Center" Margin="0,0,-450,360" TextWrapping="Wrap" VerticalAlignment="Center" MouseLeftButtonDown="Button_Click_Biblioteca" IsEnabled="False" Foreground="White"><Run Language="pt-br" Text="Biblioteca"/></TextBlock>
         <TextBlock x:Name="Sair" HorizontalAlignment="Center" Margin="0,0,-700,360" TextWrapping="Wrap" VerticalAlignment="Center" MouseLeftButtonDown="Button_Click_Sair" IsEnabled="False" Foreground="White"><Run Language="pt-br" Text="Sair"/></TextBlock>
         <TextBlock x:Name="Suporte" HorizontalAlignment="Center" Margin="0,0,-590,360" TextWrapping="Wrap" VerticalAlignment="Center" MouseLeftButtonDown="Button_Click_Suporte" IsEnabled="False" Foreground="White"><Run Language="pt-br" Text="Suporte"/></TextBlock>
@@ -32,6 +31,7 @@
         <Button Content="Todos os Mais Sugeridos" HorizontalAlignment="Center" Height="40" Margin="0,0,-490,-330" VerticalAlignment="Center" Width="260" Background="#FF247BA0" BorderBrush="{x:Null}" FontFamily="Arial" Foreground="White"/>
         <Button Content="Enviar" HorizontalAlignment="Center" Height="16" Margin="0,0,-666,-80" VerticalAlignment="Center" Width="88" FontSize="10" Background="#FF247BA0" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}"/>
         <Button Content="Comprar" HorizontalAlignment="Center" Margin="0,0,-658,130" VerticalAlignment="Center" Width="96" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold" Click="Button_Click"/>
+        <Image HorizontalAlignment="Center" Height="76" Margin="0,0,740,350" VerticalAlignment="Center" Width="97" Source="/Music_Preview_Logo_V4.jpg"/>
 
 
     </Grid>
