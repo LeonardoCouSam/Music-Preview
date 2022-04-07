@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Music Preview Logo V3.png" />
+    <None Remove="Music_Preview_Logo_V4.jpg" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Music Preview Logo V3.png" />
+    <Resource Include="Music_Preview_Logo_V4.jpg" />
   </ItemGroup>
 
 </Project>

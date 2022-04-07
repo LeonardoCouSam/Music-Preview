@@ -6,6 +6,38 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
   </ItemGroup>
-  <ItemGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <Compile Update="Biblioteca.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Catalogo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Compra.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Producao.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Sugestao.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Biblioteca.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Catalogo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Compra.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Producao.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Sugestao.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
 </Project>
