@@ -18,7 +18,7 @@
         </Border>
         <Button Content="Seu carrinho de compras está aqui!" HorizontalAlignment="Center" Margin="0,0,-286,200" VerticalAlignment="Center" Height="56" Width="260" FontFamily="Arial" Foreground="White" Background="#FF1F1E1E" BorderThickness="1,1,1,1" BorderBrush="Gray"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,0,-660,239" TextWrapping="Wrap" VerticalAlignment="Center" Height="15" Width="113" Text="Valor Total" IsEnabled="False" TextAlignment="Center" FontFamily="Arial" Foreground="White"/>
-        <Image HorizontalAlignment="Center" Height="76" Margin="0,0,740,350" VerticalAlignment="Center" Width="97" Source="/Music Preview Logo V3.png"/>
+        <Image HorizontalAlignment="Center" Height="76" Margin="0,0,680,350" VerticalAlignment="Center" Width="97" Source="/Music_Preview_Logo_V3 3.png" StretchDirection="Both" Stretch="Uniform"/>
         <TextBlock x:Name="Biblioteca" HorizontalAlignment="Center" Margin="0,0,-450,360" TextWrapping="Wrap" VerticalAlignment="Center" MouseLeftButtonDown="Button_Click_Biblioteca" IsEnabled="False" Foreground="White"><Run Language="pt-br" Text="Biblioteca"/></TextBlock>
         <TextBlock x:Name="Sair" HorizontalAlignment="Center" Margin="0,0,-700,360" TextWrapping="Wrap" VerticalAlignment="Center" MouseLeftButtonDown="Button_Click_Sair" IsEnabled="False" Foreground="White"><Run Language="pt-br" Text="Sair"/></TextBlock>
         <TextBlock x:Name="Suporte" HorizontalAlignment="Center" Margin="0,0,-590,360" TextWrapping="Wrap" VerticalAlignment="Center" MouseLeftButtonDown="Button_Click_Suporte" IsEnabled="False" Foreground="White"><Run Language="pt-br" Text="Suporte"/></TextBlock>
@@ -32,7 +32,11 @@
         <Button Content="Todos em Produção" HorizontalAlignment="Center" Height="40" Margin="0,0,-490,-190" VerticalAlignment="Center" Width="260" Background="#FF247BA0" BorderBrush="{x:Null}" FontFamily="Arial" Foreground="White"/>
         <Button Content="Todos os Mais Sugeridos" HorizontalAlignment="Center" Height="40" Margin="0,0,-490,-330" VerticalAlignment="Center" Width="260" Background="#FF247BA0" BorderBrush="{x:Null}" FontFamily="Arial" Foreground="White"/>
         <Button Content="Enviar" HorizontalAlignment="Center" Height="16" Margin="0,0,-666,-80" VerticalAlignment="Center" Width="88" FontSize="10" Background="#FF247BA0" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}"/>
-        <Button Content="Comprar" HorizontalAlignment="Center" Margin="0,0,-658,130" VerticalAlignment="Center" Width="96" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold" Click="Button_Click"/>
+        <Button Content="" HorizontalAlignment="Center" Margin="0,0,-660,110" VerticalAlignment="Center" Width="50" BorderBrush="{x:Null}" Foreground="{x:Null}" FontWeight="Bold" Click="Button_Click" Height="40">
+            <Button.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="/carrinho de comprasV2.jpg"/>
+            </Button.Background>
+        </Button>
 
 
     </Grid>
