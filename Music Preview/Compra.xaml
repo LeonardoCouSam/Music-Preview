@@ -15,8 +15,8 @@
         <TextBox HorizontalAlignment="Center" Height="32" Margin="0,0,608,-140" TextWrapping="Wrap" Text="Validade" VerticalAlignment="Center" Width="150" Background="{x:Null}" BorderBrush="Gray" Foreground="Gray"/>
         <TextBox HorizontalAlignment="Center" Height="32" Margin="0,0,608,-220" TextWrapping="Wrap" Text="Código de Segurança" VerticalAlignment="Center" Width="150" Background="{x:Null}" BorderBrush="Gray" Foreground="Gray"/>
         <Button Content="Fechar Pedido" HorizontalAlignment="Center" Height="35" Margin="0,0,0,-350" VerticalAlignment="Center" Width="215" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White" FontSize="20" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" Height="41" Margin="434,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318" Foreground="White"><Run Language="pt-br" Text="Imprimir boleto e pague no banco"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="44" Margin="434,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" Foreground="White"><Run Language="pt-br" Text="Prazo de Validade do Boleto é de 1 (UM) dia"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="41" Margin="434,176,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="318" Foreground="White" FontSize="14"><Run Language="pt-br" Text="Imprimir boleto e pague no banco"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="44" Margin="434,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302" Foreground="White" FontSize="14"><Run Language="pt-br" Text="Prazo de Validade do Boleto é de 1 (UM) dia"/></TextBlock>
 
     </Grid>
 </Window>
