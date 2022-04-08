@@ -9,10 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="carrinho de comprasV2.jpg" />
+    <None Remove="Music_Preview_Logo_V3 3.png" />
     <None Remove="Music_Preview_Logo_V4.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="carrinho de comprasV2.jpg" />
+    <Resource Include="Music_Preview_Logo_V3 3.png" />
     <Resource Include="Music_Preview_Logo_V4.jpg" />
   </ItemGroup>
 
