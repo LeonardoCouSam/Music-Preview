@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace Music_Preview
 {
     /// <summary>
-    /// Interaction logic for Producao.xaml
+    /// Interaction logic for Compra.xaml
     /// </summary>
-    public partial class Producao : Window
+    public partial class Compra : Window
     {
-        public Producao()
+        public Compra()
         {
             InitializeComponent();
-        }
-
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }

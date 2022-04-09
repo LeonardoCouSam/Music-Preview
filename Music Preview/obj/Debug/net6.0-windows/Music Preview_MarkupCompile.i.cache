@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\leona\Source\Repos\LeonardoCouSam\Music-Preview\Music Preview\obj\Debug\net6.0-windows\
+C:\Users\leona\source\repos\LeonardoCouSam\Music-Preview\Music Preview\obj\Debug\net6.0-windows\
 Music_Preview
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\leona\Source\Repos\LeonardoCouSam\Music-Preview\Music Preview\App.xaml
-71006673904
+C:\Users\leona\source\repos\LeonardoCouSam\Music-Preview\Music Preview\App.xaml
+13-208808326
 
-11407407877
+17-1504757430
 1941142463650
-CódigoCadastro.xaml;EsqueceuSenha(1).xaml;EsqueceuSenha(2).xaml;EsqueceuSenha(3).xaml;Menu.xaml;TelaCadastro.xaml;TelaLogin.xaml;
+Biblioteca.xaml;Catalogo.xaml;Compra.xaml;CódigoCadastro.xaml;EsqueceuSenha_1.xaml;EsqueceuSenha_2.xaml;EsqueceuSenha_3.xaml;Menu.xaml;Producao.xaml;Sugestao.xaml;Suporte.xaml;TelaCadastro.xaml;TelaLogin.xaml;
 
-True
+False
 
