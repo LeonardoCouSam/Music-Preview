@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Music_Preview
 {
     /// <summary>
-    /// Interaction logic for Window2.xaml
+    /// Lógica interna para EsqueceuSenha2.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class EsqueceuSenha2 : Window
     {
-        public Window2()
+        public EsqueceuSenha2()
         {
             InitializeComponent();
         }
