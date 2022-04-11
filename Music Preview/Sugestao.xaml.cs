@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Music_Preview
 {
     /// <summary>
-    /// Interaction logic for Sugestão.xaml
+    /// Lógica interna para Sugestao.xaml
     /// </summary>
-    public partial class Sugestão : Window
+    public partial class Sugestao : Window
     {
-        public Sugestão()
+        public Sugestao()
         {
             InitializeComponent();
         }

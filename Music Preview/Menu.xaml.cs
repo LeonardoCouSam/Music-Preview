@@ -15,15 +15,14 @@ using System.Windows.Shapes;
 namespace Music_Preview
 {
     /// <summary>
-    /// Interaction logic for Window5.xaml
+    /// Lógica interna para Menu.xaml
     /// </summary>
-    public partial class Window5 : Window
+    public partial class Menu : Window
     {
-        public Window5()
+        public Menu()
         {
             InitializeComponent();
         }
-
         private void Button_Click_Suporte(object sender, MouseButtonEventArgs e)
         {
 
@@ -31,7 +30,7 @@ namespace Music_Preview
 
         private void Button_Click_Biblioteca(object sender, MouseButtonEventArgs e)
         {
-            
+
         }
 
         private void Button_Click_Sair(object sender, MouseButtonEventArgs e)
