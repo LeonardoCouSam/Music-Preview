@@ -12,8 +12,4 @@
     <None Remove="Music Preview Logo V3.png" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Resource Include="Music Preview Logo V3.png" />
-  </ItemGroup>
-
 </Project>

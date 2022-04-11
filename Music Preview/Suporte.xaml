@@ -8,9 +8,9 @@
         Title="Suporte" Height="650" Width="600">
     <Grid Background="#FF1F1E1E">
         <TextBlock x:Name="Titulo" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="140" Width="601" FontSize="48" Margin="0,22,0,0" FontWeight="Bold" IsEnabled="False" FontFamily="Microsoft YaHei Light" TextAlignment="Center" Foreground="White"><Run Language="pt-br" Text="Suporte"/></TextBlock>
-        <TextBox x:Name="Email" HorizontalAlignment="Center" Margin="0,0,0,250" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center" Width="396" TextChanged="TextBox_TextChanged" Height="54" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
-        <TextBox x:Name="Assunto" HorizontalAlignment="Center" Margin="0,0,0,100" TextWrapping="Wrap" Text="Assunto" VerticalAlignment="Center" Width="396" TextChanged="TextBox_TextChanged" Height="54" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
-        <TextBox x:Name="Mensagem" HorizontalAlignment="Center" Margin="0,0,0,-150" TextWrapping="Wrap" Text="Mensagem" VerticalAlignment="Center" Width="396" TextChanged="TextBox_TextChanged" Height="150" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
+        <TextBox x:Name="Email" HorizontalAlignment="Center" Margin="0,0,0,250" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center" Width="396" Height="54" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
+        <TextBox x:Name="Assunto" HorizontalAlignment="Center" Margin="0,0,0,100" TextWrapping="Wrap" Text="Assunto" VerticalAlignment="Center" Width="396" Height="54" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
+        <TextBox x:Name="Mensagem" HorizontalAlignment="Center" Margin="0,0,0,-150" TextWrapping="Wrap" Text="Mensagem" VerticalAlignment="Center" Width="396"  Height="150" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
         <Button x:Name="Botao_Enviar" Content="Enviar" HorizontalAlignment="Center" Margin="0,0,0,-450" VerticalAlignment="Center" Height="54" Width="398" FontSize="24" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White"/>
 
     </Grid>

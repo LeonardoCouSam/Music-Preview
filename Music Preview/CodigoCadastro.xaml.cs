@@ -17,11 +17,11 @@ namespace Music_Preview
     /// <summary>
     /// Lógica interna para Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class CodigoCadastro : Window
     {
-        public Window1()
+        public CodigoCadastro()
         {
-            InitializeComponent();
+            // InitializeComponent();
         }
     }
 }
