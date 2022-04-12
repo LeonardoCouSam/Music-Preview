@@ -7,12 +7,17 @@
         mc:Ignorable="d"
         Title="Cadastra-se" Height="650" Width="700">
     <Grid Background="#FF1F1E1E">
-        <TextBlock x:Name="Titulo" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="140" Width="475" FontSize="48" Margin="0,0,0,400" FontWeight="Bold" IsEnabled="False" FontFamily="Microsoft YaHei Light" TextAlignment="Center" Foreground="White"><Run Text="Cadastr"/><Run Language="pt-br" Text="o"/></TextBlock>
-        <TextBox x:Name="NomeConta" HorizontalAlignment="Center" Margin="0,0,0,50" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Center" Width="396" Height="54" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
-        <TextBox x:Name="Senha" HorizontalAlignment="Center" Margin="0,0,0,-100" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Center" Width="396"  Height="52" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
-        <Button x:Name="Botao_Cadastrar" Content="Cadastrar" HorizontalAlignment="Center" Margin="0,0,0,-450" VerticalAlignment="Center" Height="54" Width="398" FontSize="24" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White"/>
-        <TextBox x:Name="ConfirmaSenha" HorizontalAlignment="Center" Margin="0,0,0,-250" TextWrapping="Wrap" Text="Confirmar Senha" VerticalAlignment="Center" Width="396" Height="52" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
-        <TextBox x:Name="Email" HorizontalAlignment="Center" Margin="0,0,0,200" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center" Width="396"  Height="54" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="Gray"/>
+        <TextBlock x:Name="Titulo" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="100" Width="475" FontSize="48" Margin="0,0,0,420" FontWeight="Bold" IsEnabled="False" FontFamily="Microsoft YaHei Light" TextAlignment="Center" Foreground="White"><Run Text="Cadastr"/><Run Language="pt-br" Text="o"/></TextBlock>
+        <TextBox x:Name="NomeConta" HorizontalAlignment="Center" Margin="0,0,0,50" TextWrapping="Wrap" VerticalAlignment="Center" Width="396" Height="52" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="White"/>
+        <PasswordBox HorizontalAlignment="Center" Height="52" Margin="0,0,0,-100" VerticalAlignment="Center" Width="396" Foreground="White" Background="{x:Null}"/>
+        <PasswordBox HorizontalAlignment="Center" Height="52" Margin="0,0,0,-250" VerticalAlignment="Center" Width="396" Foreground="White" Background="{x:Null}"/>
+        <TextBox x:Name="Email" HorizontalAlignment="Center" Margin="0,0,0,200" TextWrapping="Wrap" VerticalAlignment="Center" Width="396"  Height="52" FontFamily="Arial" FontSize="36" Background="{x:Null}" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Center" Height="19" Margin="0,0,320,280" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center" Width="74" Foreground="White" FontSize="15"/>
+        <TextBlock HorizontalAlignment="Center" Height="19" Margin="0,0,320,130" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Center" Width="74" Foreground="White" FontSize="15"/>
+        <TextBlock HorizontalAlignment="Center" Height="19" Margin="0,0,320,-20" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Center" Width="74" Foreground="White" FontSize="15"/>
+        <TextBlock HorizontalAlignment="Center" Height="19" Margin="0,0,280,-170" TextWrapping="Wrap" Text="Confirmar Senha" VerticalAlignment="Center" Width="120" Foreground="White" FontSize="15"/>
+        <Button x:Name="Botao_Cadastrar" Content="Cadastrar" HorizontalAlignment="Center" Margin="0,0,0,-450" VerticalAlignment="Center" Height="54" Width="396" FontSize="24" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White"/>
+        
 
     </Grid>
 </Window>
