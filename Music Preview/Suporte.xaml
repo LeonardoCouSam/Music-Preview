@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Music_Preview"
         mc:Ignorable="d"
-        Title="Suporte" Height="650" Width="600">
+        Title="Suporte" Height="650" Width="600"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Grid Background="#FF1F1E1E">
         <TextBlock x:Name="Titulo" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="140" Width="601" FontSize="48" Margin="0,22,0,0" FontWeight="Bold" IsEnabled="False" FontFamily="Microsoft YaHei Light" TextAlignment="Center" Foreground="White"><Run Language="pt-br" Text="Suporte"/></TextBlock>
         <TextBox x:Name="Email" HorizontalAlignment="Center" Margin="0,0,0,250" TextWrapping="Wrap" VerticalAlignment="Center" Width="396" Height="54" FontFamily="Arial" FontSize="24" Background="{x:Null}" Foreground="White"/>

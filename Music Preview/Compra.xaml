@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Music_Preview"
         mc:Ignorable="d"
-        Title="Compra" Height="450" Width="800">
+        Title="Compra" Height="450" Width="800"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Grid x:Name="ValidadeCartao" Background="#FF1F1E1E">
         <TextBlock x:Name="Titulo" HorizontalAlignment="Center" Height="68" Margin="0,0,-170,350" TextWrapping="Wrap" VerticalAlignment="Center" Width="436" Foreground="#FFF7F7F7" FontSize="48"><Run Language="pt-br" Text="Pagamento"/></TextBlock>
         <TextBlock x:Name="Titulo_Cartao" HorizontalAlignment="Center" Height="38" Margin="0,0,450,150" TextWrapping="Wrap" VerticalAlignment="Center" Width="263" Foreground="White" FontSize="30"><Run Language="pt-br" Text="Cartão de Crédito"/></TextBlock>

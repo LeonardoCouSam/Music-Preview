@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Music_Preview"
         mc:Ignorable="d"
-        Title="Menu" Height="450" Width="800">
+        Title="Menu" Height="450" Width="800"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
     <Grid Height="435" Width="800" Background="#FF1F1E1E">
         <TextBlock x:Name="NomeApp" HorizontalAlignment="Center" Margin="0,0,330,350" TextWrapping="Wrap" VerticalAlignment="Center" Height="57" Width="236" FontSize="36" FontFamily="Microsoft YaHei Light" OpacityMask="Black" Foreground="White" FontWeight="Normal"><Run Language="pt-br" Text="Music Preview"/></TextBlock>
         <Border BorderThickness="1,0,1,1" HorizontalAlignment="Center" Height="58" Margin="0,0,-400,375" VerticalAlignment="Center" Width="350" IsEnabled="False" Background="#FF006494" Visibility="Visible" SnapsToDevicePixels="True"/>
