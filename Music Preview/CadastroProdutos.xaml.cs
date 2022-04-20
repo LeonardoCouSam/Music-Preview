@@ -23,5 +23,12 @@ namespace Music_Preview
         {
             InitializeComponent();
         }
+
+        private void Voltar(object sender, MouseButtonEventArgs e)
+        {
+            TelaLogin window = new TelaLogin();
+            window.Show();
+            Hide();
+        }
     }
 }

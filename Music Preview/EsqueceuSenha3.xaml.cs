@@ -23,5 +23,12 @@ namespace Music_Preview
         {
             InitializeComponent();
         }
+
+        private void Voltar(object sender, MouseButtonEventArgs e)
+        {
+            EsqueceuSenha3 window = new EsqueceuSenha3();
+            window.Show();
+            Hide();
+        }
     }
 }

@@ -19,7 +19,16 @@
         <TextBlock HorizontalAlignment="Center" Height="19" Margin="0,0,320,-20" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Center" Width="74" Foreground="White" FontSize="15"/>
         <TextBlock HorizontalAlignment="Center" Height="19" Margin="0,0,280,-170" TextWrapping="Wrap" Text="Confirmar Senha" VerticalAlignment="Center" Width="120" Foreground="White" FontSize="15"/>
         <Button x:Name="Botao_Cadastrar" Content="Cadastrar" HorizontalAlignment="Center" Margin="0,0,0,-450" VerticalAlignment="Center" Height="54" Width="396" FontSize="24" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White"/>
-        
+        <Image x:Name="Botao_Voltar" HorizontalAlignment="Center" Height="30" Margin="0,0,650,580" VerticalAlignment="Center" Width="35" Source="/btnVoltar1.png" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Voltar">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
 
     </Grid>
 </Window>
