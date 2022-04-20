@@ -9,7 +9,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="carrinho de comprasV2.jpg" />
     <None Remove="Music Preview Logo V3.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MusicPreview.Controler\MusicPreview.Controler.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="carrinho de comprasV2.jpg" />
   </ItemGroup>
 
 </Project>

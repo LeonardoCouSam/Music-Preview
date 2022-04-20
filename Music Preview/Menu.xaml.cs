@@ -25,7 +25,7 @@ namespace Music_Preview
         }
         private void Button_Click_Suporte(object sender, MouseButtonEventArgs e)
         {
-
+            
         }
 
         private void Button_Click_Biblioteca(object sender, MouseButtonEventArgs e)
