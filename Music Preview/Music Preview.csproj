@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="btnVoltar1.png" />
     <None Remove="carrinho de comprasV2.jpg" />
     <None Remove="Music Preview Logo V3.png" />
   </ItemGroup>
@@ -18,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="btnVoltar1.png" />
     <Resource Include="carrinho de comprasV2.jpg" />
   </ItemGroup>
 
