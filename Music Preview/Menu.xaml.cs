@@ -23,34 +23,45 @@ namespace Music_Preview
         {
             InitializeComponent();
         }
-        private void Button_Click_Suporte(object sender, MouseButtonEventArgs e)
+
+        private void Botao_Biblioteca(object sender, MouseButtonEventArgs e)
         {
-            
+            Biblioteca window = new Biblioteca();
+            window.Show();
+            Hide();
         }
 
-        private void Button_Click_Biblioteca(object sender, MouseButtonEventArgs e)
+        private void Botao_Suporte(object sender, MouseButtonEventArgs e)
+        {
+            Suporte window = new Suporte();
+            window.Show();
+            Hide();
+        }
+
+        private void Botao_Catalogo(object sender, RoutedEventArgs e)
+        {
+            Catalogo window = new Catalogo();
+            window.Show();
+            Hide();
+        }
+
+        private void Botao_EnviarSugestao(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void Button_Click_Sair(object sender, MouseButtonEventArgs e)
+        private void Botao_Producao(object sender, RoutedEventArgs e)
         {
-
+            Producao window = new Producao();
+            window.Show();
+            Hide();
         }
 
-        private void Button_Click_FinalizarCompra(object sender, MouseButtonEventArgs e)
+        private void Botao_TelaSugeridos(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
+            Sugestao window = new Sugestao();
+            window.Show();
+            Hide();
         }
     }
 }
