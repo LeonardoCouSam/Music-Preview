@@ -23,6 +23,16 @@
         <TextBlock HorizontalAlignment="Center" Height="19" Margin="0,0,640,-20" TextWrapping="Wrap" Text="Nome Completo" VerticalAlignment="Center" Width="120" FontSize="12" Foreground="White"/>
         <TextBlock HorizontalAlignment="Center" Height="19" Margin="0,0,640,-110" TextWrapping="Wrap" Text="Validade" VerticalAlignment="Center" Width="120" FontSize="12" Foreground="White"/>
         <TextBlock HorizontalAlignment="Center" Height="19" Margin="0,0,640,-200" TextWrapping="Wrap" Text="Código de Segurança" VerticalAlignment="Center" Width="120" FontSize="12" Foreground="White"/>
+        <Image x:Name="Botao_Voltar" HorizontalAlignment="Center" Height="30" Margin="0,0,760,390" VerticalAlignment="Center" Width="35" Source="/btnVoltar1.png" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Voltar">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
 
     </Grid>
 </Window>

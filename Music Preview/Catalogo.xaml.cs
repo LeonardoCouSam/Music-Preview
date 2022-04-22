@@ -23,5 +23,12 @@ namespace Music_Preview
         {
             InitializeComponent();
         }
+
+        private void Voltar(object sender, MouseButtonEventArgs e)
+        {
+            Menu window = new Menu();
+            window.Show();
+            Hide();
+        }
     }
 }

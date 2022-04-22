@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="btnVoltar1.png" />
     <None Remove="carrinho de comprasV2.jpg" />
+    <None Remove="Catalogo.xaml~RFd3a352.TMP" />
     <None Remove="Music Preview Logo V3.png" />
   </ItemGroup>
 

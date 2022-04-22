@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Music_Preview"
         mc:Ignorable="d"
-        Title="Suporte" Height="650" Width="600"
+        Title="Suporte" Height="650" Width="700"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid Background="#FF1F1E1E">
@@ -17,7 +17,16 @@
         <TextBox x:Name="Mensagem" HorizontalAlignment="Center" Margin="0,0,0,-150" TextWrapping="Wrap" VerticalAlignment="Center" Width="396"  Height="150" FontFamily="Arial" FontSize="20" Background="{x:Null}" Foreground="White"/>
         <TextBlock HorizontalAlignment="Center" Height="19" Margin="0,0,323,20" TextWrapping="Wrap" Text="Mensagem" VerticalAlignment="Center" Width="75" Foreground="White" FontSize="15"/>
         <Button x:Name="Botao_Enviar" Content="Enviar" HorizontalAlignment="Center" Margin="0,0,0,-450" VerticalAlignment="Center" Height="54" Width="398" FontSize="24" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White"/>
-        
+        <Image x:Name="Botao_Voltar" HorizontalAlignment="Center" Height="30" Margin="0,0,650,580" VerticalAlignment="Center" Width="35" Source="/btnVoltar1.png" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Voltar">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="180"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
 
 
 
