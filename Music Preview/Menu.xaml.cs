@@ -63,5 +63,10 @@ namespace Music_Preview
             window.Show();
             Hide();
         }
+
+        private void LogOut(object sender, MouseButtonEventArgs e)
+        {
+
+        }
     }
 }
