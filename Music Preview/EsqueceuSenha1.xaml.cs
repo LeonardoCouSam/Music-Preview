@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Net.Mail;
+using System.Net;
 
 namespace Music_Preview
 {
@@ -44,6 +46,7 @@ namespace Music_Preview
                 if (emailusuario != null)
                 {
                     LimpaCampos();
+                    EnviandoCodigo(email);
                     EsqueceuSenha2 Window = new EsqueceuSenha2();
                     Window.Show();
                     Hide();
@@ -57,6 +60,28 @@ namespace Music_Preview
         private void LimpaCampos()
         {
             Email.Text = "";
+        }
+        private void EnviandoCodigo(string email) 
+        {
+            Random random = new Random();
+            int codigo = random.Next(1, 100000);
+            MailMessage emailcodigo = new MailMessage("ojao.bolinha@gmail.com", email);
+
+            emailcodigo.Subject = "Recuperando senha";
+            emailcodigo.IsBodyHtml = true;
+            emailcodigo.Body = "<p> Código^: "+ codigo +"  </p>";
+            emailcodigo.SubjectEncoding = Encoding.GetEncoding("UTF-8");
+            emailcodigo.BodyEncoding = Encoding.GetEncoding("UTF-8");
+
+
+            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com",587);
+
+            smtpClient.UseDefaultCredentials = false;
+            smtpClient.Credentials = new NetworkCredential("ojao.bolinha@gmail.com","Me11022008*");
+
+            smtpClient.EnableSsl = true;
+
+            smtpClient.Send(emailcodigo);
         }
     }
 }
