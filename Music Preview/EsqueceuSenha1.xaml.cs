@@ -30,5 +30,33 @@ namespace Music_Preview
             window.Show();
             Hide();
         }
+
+        private void EnviarEmail(object sender, RoutedEventArgs e)
+        {
+            if (Email.Text == "")
+            {
+                MessageBoxResult messageBox = MessageBox.Show("Preencha o campo!", "Atenção", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                string email = Email.Text;
+                Usuario emailusuario = cUsuario.ObterEmailEsqueceuSenha(email);
+                if (emailusuario != null)
+                {
+                    LimpaCampos();
+                    EsqueceuSenha2 Window = new EsqueceuSenha2();
+                    Window.Show();
+                    Hide();
+                }
+                else
+                {
+                    MessageBoxResult messageBox = MessageBox.Show("Email incorreto!", "Atenção", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+        }
+        private void LimpaCampos()
+        {
+            Email.Text = "";
+        }
     }
 }

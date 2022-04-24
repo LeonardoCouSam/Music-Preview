@@ -15,7 +15,7 @@
         <TextBlock HorizontalAlignment="Center" Height="19" Margin="0,0,320,20" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center"   Width="72" Foreground="White" FontSize="15"/>
         <TextBlock x:Name="CaixaTexto" HorizontalAlignment="Center" Margin="0,0,0,150" TextWrapping="Wrap" Text="Insira seu e-mail para o envio do código" VerticalAlignment="Center" Height="41" Width="393" FontSize="22" Foreground="White"/>
         <TextBlock x:Name="Titulo" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Height="140" Width="601" FontSize="48" Margin="0,0,0,350" FontWeight="Bold" IsEnabled="False" FontFamily="Microsoft YaHei Light" TextAlignment="Center" Foreground="White"><Run Text="Esqueci minha Senh"/><Run Language="pt-br" Text="a"/></TextBlock>
-        <Button x:Name="Botao_Enviar" Content="Enviar" HorizontalAlignment="Center" Margin="0,0,0,-300" VerticalAlignment="Center" Height="54" Width="398" FontSize="24" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White"/>
+        <Button x:Name="Botao_Enviar" Content="Enviar" HorizontalAlignment="Center" Margin="0,0,0,-300" VerticalAlignment="Center" Height="54" Width="398" FontSize="24" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White" Click="EnviarEmail"/>
         <Image x:Name="Botao_Voltar" HorizontalAlignment="Center" Height="30" Margin="0,0,550,480" VerticalAlignment="Center" Width="35" Source="/btnVoltar1.png" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Voltar">
             <Image.RenderTransform>
                 <TransformGroup>

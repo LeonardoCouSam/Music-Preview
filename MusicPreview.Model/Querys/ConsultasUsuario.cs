@@ -45,5 +45,42 @@ public class ConsultasUsuario
 
         return usuario;
     }
+    public static Usuario ObterEmailEsqueceuSenha(string email) 
+    {
+        var conexao = new MySqlConnection(ConnectionBD.Connection.ConnectionString);
+        Usuario emailusuario = null;
+
+        try
+        {
+            conexao.Open();
+            var comando = conexao.CreateCommand();
+            comando.CommandText = @"SELECT * FROM Usuario WHERE email = @email;";
+            comando.Parameters.AddWithValue("@email", email);
+            var reader = comando.ExecuteReader();
+            while (reader.Read())
+            {
+                emailusuario = new Usuario();
+                emailusuario.Id_usuario = reader.GetInt32("id_usuario");
+                emailusuario.Nome_usuario = reader.GetString("nome_usuario");
+                emailusuario.Email = reader.GetString("email");
+                emailusuario.Senha = reader.GetString("senha");
+                break;
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+            emailusuario = null;
+        }
+        finally
+        {
+            if (conexao.State == ConnectionState.Open)
+            {
+                conexao.Close();
+            }
+        }
+         return emailusuario;
+    }
 }
+
 
