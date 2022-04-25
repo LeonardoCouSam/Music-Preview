@@ -66,7 +66,9 @@ namespace Music_Preview
 
         private void LogOut(object sender, MouseButtonEventArgs e)
         {
-
+            TelaLogin window = new TelaLogin();
+            window.Show();
+            Hide();
         }
     }
 }
