@@ -46,6 +46,7 @@ public class ConsultasUsuario
         return usuario;
     }
     public static Usuario ObterEmailEsqueceuSenha(string email) 
+
     {
         var conexao = new MySqlConnection(ConnectionBD.Connection.ConnectionString);
         Usuario emailusuario = null;
@@ -80,6 +81,36 @@ public class ConsultasUsuario
             }
         }
          return emailusuario;
+    }
+
+    public static bool RedefinirSenha(string email, string senha)
+    {
+        
+        var conexao = new MySqlConnection(ConnectionBD.Connection.ConnectionString);
+        bool foiAlterado = false;
+
+        try
+        {
+            conexao.Open();
+            var comando = conexao.CreateCommand();
+            comando.CommandText = @"UPDATE Usuario SET senha = @senha WHERE email = @email";
+            comando.Parameters.AddWithValue("@email", email);
+            comando.Parameters.AddWithValue("@senha", senha);
+            var reader = comando.ExecuteReader();
+            foiAlterado = true;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        finally 
+        {
+            if (conexao.State == ConnectionState.Open) 
+            {
+                conexao.Close();
+            }
+        }
+        return foiAlterado;
     }
 }
 

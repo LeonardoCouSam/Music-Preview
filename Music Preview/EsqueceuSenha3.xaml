@@ -9,7 +9,7 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid Background="#FF1F1E1E">
-        <Button x:Name="Botao_Enviar" Content="Enviar" HorizontalAlignment="Center" Margin="0,0,0,-250" VerticalAlignment="Center" Height="54" Width="398" FontSize="24" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White"/>
+        <Button x:Name="Botao_Enviar" Content="Enviar" HorizontalAlignment="Center" Margin="0,0,0,-250" VerticalAlignment="Center" Height="54" Width="398" FontSize="24" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White" Click="Botao_NovaSenha"/>
         <PasswordBox x:Name="NovaSenha" HorizontalAlignment="Center" Height="50" Margin="0,0,0,50" VerticalAlignment="Center" Width="396" Background="{x:Null}" Foreground="White" FontSize="18"/>
         <TextBlock HorizontalAlignment="Center" Height="19" Margin="0,0,290,120" TextWrapping="Wrap" Text="Nova Senha" VerticalAlignment="Center"   Width="100" Foreground="White" FontSize="15"/>
         <TextBlock x:Name="CaixaTexto" HorizontalAlignment="Center" Margin="0,0,0,200" TextWrapping="Wrap" Text="Defina sua nova senha" VerticalAlignment="Center" Height="41" Width="393" FontSize="22" TextAlignment="Center" Foreground="White"/>

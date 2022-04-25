@@ -16,7 +16,7 @@
             <TextBlock x:Name="CaixaTexto" HorizontalAlignment="Center" Margin="0,0,0,150" TextWrapping="Wrap" Text="Insira seu código" VerticalAlignment="Center" Height="41" Width="393" FontSize="22" TextAlignment="Center" Foreground="White"/>
 
         </Grid>
-        <Button x:Name="Botao_Enviar" Content="Enviar" HorizontalAlignment="Center" Margin="0,390,0,0" VerticalAlignment="Top" Height="54" Width="398" FontSize="24" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White"/>
+        <Button x:Name="Botao_Enviar" Content="Enviar" HorizontalAlignment="Center" Margin="0,390,0,0" VerticalAlignment="Top" Height="54" Width="398" FontSize="24" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White" Click="Botao_ConfirmaCodigo"/>
         <Image x:Name="Botao_Voltar" HorizontalAlignment="Center" Height="30" Margin="0,0,550,480" VerticalAlignment="Center" Width="35" Source="/btnVoltar1.png" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Voltar">
             <Image.RenderTransform>
                 <TransformGroup>

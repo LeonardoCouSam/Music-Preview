@@ -21,6 +21,7 @@ namespace Music_Preview
     /// </summary>
     public partial class EsqueceuSenha1 : Window
     {
+
         public EsqueceuSenha1()
         {
             InitializeComponent();
@@ -45,9 +46,12 @@ namespace Music_Preview
                 Usuario emailusuario = cUsuario.ObterEmailEsqueceuSenha(email);
                 if (emailusuario != null)
                 {
+                    Random random = new Random();
+                    int codigo = random.Next(1, 100000);
+
                     LimpaCampos();
-                    EnviandoCodigo(email);
-                    EsqueceuSenha2 Window = new EsqueceuSenha2();
+                    EnviandoCodigo(email,codigo);
+                    EsqueceuSenha2 Window = new EsqueceuSenha2(codigo,email, this);
                     Window.Show();
                     Hide();
                 }
@@ -61,15 +65,15 @@ namespace Music_Preview
         {
             Email.Text = "";
         }
-        private void EnviandoCodigo(string email) 
+        private void EnviandoCodigo(string email, int codigo) 
         {
-            Random random = new Random();
-            int codigo = random.Next(1, 100000);
+
+            
             MailMessage emailcodigo = new MailMessage("ojao.bolinha@gmail.com", email);
 
             emailcodigo.Subject = "Recuperando senha";
             emailcodigo.IsBodyHtml = true;
-            emailcodigo.Body = "<p> Código^: "+ codigo +"  </p>";
+            emailcodigo.Body = "<p> Código: "+ codigo +"  </p>";
             emailcodigo.SubjectEncoding = Encoding.GetEncoding("UTF-8");
             emailcodigo.BodyEncoding = Encoding.GetEncoding("UTF-8");
 

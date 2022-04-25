@@ -19,16 +19,52 @@ namespace Music_Preview
     /// </summary>
     public partial class EsqueceuSenha3 : Window
     {
-        public EsqueceuSenha3()
+        string email;
+        EsqueceuSenha2 esqueceusenha2;
+        public EsqueceuSenha3(string email, EsqueceuSenha2 esqueceusenha2)
         {
             InitializeComponent();
+            this.email = email;
+            this.esqueceusenha2 = esqueceusenha2;
         }
 
         private void Voltar(object sender, MouseButtonEventArgs e)
         {
-            EsqueceuSenha3 window = new EsqueceuSenha3();
+            TelaLogin window = new TelaLogin();
             window.Show();
             Hide();
+        }
+
+        private void Botao_NovaSenha(object sender, RoutedEventArgs e)
+        {
+            
+
+            if( NovaSenha.Password == "" || ConfirmaSenha.Password == "")
+            {
+                MessageBoxResult messageBox = MessageBox.Show("Preencha todos os campos!", "Atenção", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else
+            {
+                string novasenha = NovaSenha.Password;
+                string confirmasenha = ConfirmaSenha.Password;
+                bool senhaAlterada = cUsuario.RededefinirSenha(email,novasenha);
+                if (novasenha == confirmasenha)
+                {
+                    LimpaCampos();
+                    TelaLogin Window = new TelaLogin();
+                    Window.Show();
+                    Hide();
+                }
+                else
+                {
+                    MessageBoxResult messageBox = MessageBox.Show("Senha incorreta", "Atenção", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+        }
+        private void LimpaCampos()
+        {
+            NovaSenha.Password = "";
+            ConfirmaSenha.Password = "";
         }
     }
 }

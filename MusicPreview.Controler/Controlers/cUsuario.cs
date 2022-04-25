@@ -15,5 +15,10 @@ public class cUsuario
     {
         return ConsultasUsuario.ObterEmailEsqueceuSenha(email);
     }
+
+    public static bool RededefinirSenha(string email, string senha) 
+    {
+        return ConsultasUsuario.RedefinirSenha(email, senha);
+    }
 }
 

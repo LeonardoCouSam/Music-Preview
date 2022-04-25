@@ -19,9 +19,16 @@ namespace Music_Preview
     /// </summary>
     public partial class EsqueceuSenha2 : Window
     {
-        public EsqueceuSenha2()
+        int codigo;
+        string email;
+        EsqueceuSenha1 esqueceusenha1;
+        public EsqueceuSenha2(int codigo,string email, EsqueceuSenha1 esqueceusenha1)
         {
             InitializeComponent();
+            this.codigo = codigo;
+            this.email = email;
+            this.esqueceusenha1 = esqueceusenha1;
+            
         }
 
         private void Voltar(object sender, MouseButtonEventArgs e)
@@ -29,6 +36,31 @@ namespace Music_Preview
             EsqueceuSenha1 window = new EsqueceuSenha1();
             window.Show();
             Hide();
+        }
+
+        public void Botao_ConfirmaCodigo(object sender, RoutedEventArgs e)
+        {
+            if (Codigo.Text == "")
+            {
+                MessageBoxResult messageBox = MessageBox.Show("Preencha o campo!", "Atenção", MessageBoxButton.OK, MessageBoxImage.Exclamation);
+            }
+            else 
+            {
+              int codigoRecebido = Int32.Parse(Codigo.Text);
+                if (codigoRecebido == codigo) 
+                {
+                    LimpaCampos();
+                    EsqueceuSenha3 window = new EsqueceuSenha3(email, this);
+                    window.Show();
+                    Hide();
+                        
+                }
+            }
+
+        }
+        private void LimpaCampos()
+        {
+            Codigo.Text = "";
         }
     }
 }
