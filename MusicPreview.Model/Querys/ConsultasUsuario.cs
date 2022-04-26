@@ -82,7 +82,6 @@ public class ConsultasUsuario
         }
          return emailusuario;
     }
-
     public static bool RedefinirSenha(string email, string senha)
     {
         
@@ -112,6 +111,38 @@ public class ConsultasUsuario
         }
         return foiAlterado;
     }
+
+    public static bool InserirCadastro(string Nome_usuario, string Email, string Senha)
+    {
+        var conexao = new MySqlConnection(ConnectionBD.Connection.ConnectionString);
+        bool foiInserido = false;
+
+        try
+        {
+            conexao.Open();
+            var comando = conexao.CreateCommand();
+            comando.CommandText = @"INSERT INTO USUARIO (Nome_usuario, Email, Senha) values (@nome_usuario, @email, @senha)";
+            comando.Parameters.AddWithValue("@nome_usuario", Nome_usuario);
+            comando.Parameters.AddWithValue("@email", Email);
+            comando.Parameters.AddWithValue("@senha", Senha);
+            var leitura = comando.ExecuteReader();
+            foiInserido = true;
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        finally
+        {
+            if (conexao.State == ConnectionState.Open)
+            {
+                conexao.Close();
+            }
+        }
+        return foiInserido;
+
+    }
+
 }
 
 

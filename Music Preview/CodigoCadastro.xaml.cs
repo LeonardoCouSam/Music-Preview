@@ -21,7 +21,7 @@ namespace Music_Preview
     {
         public CodigoCadastro()
         {
-            // InitializeComponent();
+            //InitializeComponent();
         }
     }
 }

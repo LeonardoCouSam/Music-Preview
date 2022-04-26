@@ -10,15 +10,18 @@ public class cUsuario
     {
         return ConsultasUsuario.ObterUsuarioPeloNomeSenha(nome,senha);
     }
-
     public static Usuario ObterEmailEsqueceuSenha(string email) 
     {
         return ConsultasUsuario.ObterEmailEsqueceuSenha(email);
     }
-
     public static bool RededefinirSenha(string email, string senha) 
     {
         return ConsultasUsuario.RedefinirSenha(email, senha);
+    }
+    
+    public static bool NovoCadastro(string Nome_usuario, string Email, string Senha)
+    {
+        return ConsultasUsuario.InserirCadastro(Nome_usuario, Email, Senha);
     }
 }
 
