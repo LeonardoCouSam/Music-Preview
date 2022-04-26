@@ -1,0 +1,20 @@
+﻿<Window x:Class="Music_Preview.CodigoCadastro1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Music_Preview"
+        mc:Ignorable="d"
+        Title="CodigoCadastro1" Height="550" Width="600"
+        ResizeMode = "NoResize"
+        WindowStartupLocation="CenterScreen">
+
+    <Grid Background="#FF1F1E1E">
+        <Button x:Name="Botao_Enviar" Content="Enviar" HorizontalAlignment="Center" VerticalAlignment="Center" Height="54" Width="398" Margin="0,0,30,-320" FontSize="24" Background="#FF247BA0" BorderBrush="{x:Null}" Foreground="White" Click="Botao_ConfirmaCodigo"/>
+        <TextBlock x:Name="Titulo" HorizontalAlignment="Center" Height="110" Margin="0,0,-90,340" TextWrapping="Wrap" VerticalAlignment="Center" Width="300" FontSize="48" Foreground="White"><Run Language="pt-br" Text="Cadastro"/></TextBlock>
+        <TextBlock x:Name="Mensagem" HorizontalAlignment="Center" Height="42" Margin="0,0,-45,130" TextWrapping="Wrap" VerticalAlignment="Center" Width="438" FontSize="22" Foreground="White"><Run Language="pt-br" Text="Insira o código enviado ao seu email"/></TextBlock>
+        <TextBox x:Name="Codigo" HorizontalAlignment="Center" Height="54" Margin="0,0,30,-80" TextWrapping="Wrap" VerticalAlignment="Center" Width="398" Background="{x:Null}" Foreground="White"/>
+        <TextBlock HorizontalAlignment="Center" Height="20" Margin="0,0,355,-10" TextWrapping="Wrap" VerticalAlignment="Center" Width="75" Foreground="White" FontSize="15"><Run Language="pt-br" Text="Código"/></TextBlock>
+
+    </Grid>
+</Window>

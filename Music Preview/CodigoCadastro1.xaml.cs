@@ -15,13 +15,18 @@ using System.Windows.Shapes;
 namespace Music_Preview
 {
     /// <summary>
-    /// Lógica interna para Window1.xaml
+    /// Lógica interna para CodigoCadastro1.xaml
     /// </summary>
-    public partial class CodigoCadastro : Window
+    public partial class CodigoCadastro1 : Window
     {
-        public CodigoCadastro()
+        public CodigoCadastro1()
         {
-            //InitializeComponent();
+            InitializeComponent();
+        }
+
+        private void Botao_ConfirmaCodigo(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
