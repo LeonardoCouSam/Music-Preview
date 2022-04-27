@@ -67,7 +67,7 @@ namespace Music_Preview
         }
         private void EnviandoCodigo(string email, int codigo) 
         {            
-            MailMessage emailcodigo = new MailMessage("ojao.bolinha@gmail.com", email);
+            MailMessage emailcodigo = new MailMessage("musicpreviewbr@gmail.com", email);
 
             emailcodigo.Subject = "Recuperando senha";
             emailcodigo.IsBodyHtml = true;

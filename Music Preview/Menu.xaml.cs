@@ -19,9 +19,11 @@ namespace Music_Preview
     /// </summary>
     public partial class Menu : Window
     {
+
         public Menu()
         {
             InitializeComponent();
+
         }
 
         private void Botao_Biblioteca(object sender, MouseButtonEventArgs e)

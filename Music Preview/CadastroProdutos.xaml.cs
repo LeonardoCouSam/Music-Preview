@@ -27,7 +27,7 @@ namespace Music_Preview
         }
         private void EnviandoCodigoCadastro(string email, int codigo)
         {
-            MailMessage emailcodigo = new MailMessage("loucomal111@gmail.com", email);
+            MailMessage emailcodigo = new MailMessage("musicpreviewbt@gmail.com", email);
 
             emailcodigo.Subject = "Confirmando Cadastro";
             emailcodigo.IsBodyHtml = true;
