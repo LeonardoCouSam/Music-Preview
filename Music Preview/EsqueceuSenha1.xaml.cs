@@ -79,7 +79,7 @@ namespace Music_Preview
             SmtpClient smtpClient = new SmtpClient("smtp.gmail.com",587);
 
             smtpClient.UseDefaultCredentials = false;
-            smtpClient.Credentials = new NetworkCredential("ojao.bolinha@gmail.com","Me11022008*");
+            smtpClient.Credentials = new NetworkCredential("musicpreviewbr@gmail.com", "musicpreview654321");
 
             smtpClient.EnableSsl = true;
 

@@ -38,7 +38,7 @@ namespace Music_Preview
             SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
 
             smtpClient.UseDefaultCredentials = false;
-            smtpClient.Credentials = new NetworkCredential("loucomal111@gmail.com", "KDpl13579-12");
+            smtpClient.Credentials = new NetworkCredential("musicpreviewbr@gmail.com", "musicpreview654321");
             smtpClient.EnableSsl = true;
             smtpClient.Send(emailcodigo);
         }
@@ -68,7 +68,9 @@ namespace Music_Preview
 
             else if (Senha.Password == ConfirmarSenha.Password)
             {
-
+                string senha = Senha.Password;
+                string confirmasenha = ConfirmarSenha.Password;
+                string nome = NomeConta.Text;
                 string email = Email.Text;
                 Random random = new Random();              
                 int codigo = random.Next(1, 100000);
@@ -76,7 +78,7 @@ namespace Music_Preview
                 EnviandoCodigoCadastro(email, codigo);
                
 
-                CodigoCadastro1 window = new CodigoCadastro1();
+                CodigoCadastro1 window = new CodigoCadastro1(nome, email, senha, codigo, this);
                 window.Show();
                 Hide();
 

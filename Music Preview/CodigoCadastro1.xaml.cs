@@ -19,33 +19,22 @@ namespace Music_Preview
     /// </summary>
     public partial class CodigoCadastro1 : Window
     {
-        string NomeConta;
-        string Senha;
-        string ConfirmarSenha;
-        bool foiInserido;
-
-
-        int codigo;    
+        string nome;
         string email;
-        CadastroProdutos CadastroProdutos;
-        ConsultasUsuario ConsultasUsuario;
+        string senha;
+        int codigo;
+        CadastroProdutos cadastroprodutos;
 
-        public CodigoCadastro1()
+        public CodigoCadastro1(string nome, string email, string senha, int codigo, CadastroProdutos cadastroprodutos)
         {
             InitializeComponent();
-        }
-        public CodigoCadastro1(int codigo, string email, string NomeConta, string Senha, String ConfirmarSenha, bool foiInserido, CadastroProdutos CadastroProdutos, ConsultasUsuario ConsultasUsuario)
-        {
-            InitializeComponent();
-            this.foiInserido = foiInserido;
-            this.NomeConta = NomeConta;
-            this.Senha = Senha;
-            this.ConfirmarSenha = ConfirmarSenha;
-            this.codigo = codigo;
+            this.nome = nome;
             this.email = email;
-            this.CadastroProdutos = CadastroProdutos;       
-
+            this.senha = senha;
+            this.codigo = codigo;
+            this.cadastroprodutos = cadastroprodutos;
         }
+
 
         private void Botao_ConfirmaCodigo(object sender, RoutedEventArgs e)
         {
@@ -60,13 +49,17 @@ namespace Music_Preview
 
                 if (codigoRecebido == codigo)
                 {
-                    bool foiInserido = cUsuario.NovoCadastro(NomeConta, Senha, ConfirmarSenha);
+                    bool foiInserido = cUsuario.NovoCadastro(nome, email, senha);
 
                     LimpaCampos();
                     TelaLogin window = new TelaLogin();
                     window.Show();
                     Hide();
 
+                }
+                else 
+                {
+                    MessageBoxResult messageBox = MessageBox.Show("Código incorreto!", "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
         }
