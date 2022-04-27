@@ -29,7 +29,7 @@ namespace Music_Preview
         {
             MailMessage emailcodigo = new MailMessage("loucomal111@gmail.com", email);
 
-            emailcodigo.Subject = "Confirmar Cadastro";
+            emailcodigo.Subject = "Confirmando Cadastro";
             emailcodigo.IsBodyHtml = true;
             emailcodigo.Body = "<p> Código: " + codigo + "  </p>";
             emailcodigo.SubjectEncoding = Encoding.GetEncoding("UTF-8");
