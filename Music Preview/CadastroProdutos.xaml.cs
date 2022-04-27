@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Net.Mail;
+using System.Net;
 
 namespace Music_Preview
 {
@@ -23,12 +25,37 @@ namespace Music_Preview
         {
             InitializeComponent();
         }
+        private void EnviandoCodigoCadastro(string email, int codigo)
+        {
+            MailMessage emailcodigo = new MailMessage("loucomal111@gmail.com", email);
+
+            emailcodigo.Subject = "Confirmar Cadastro";
+            emailcodigo.IsBodyHtml = true;
+            emailcodigo.Body = "<p> Código: " + codigo + "  </p>";
+            emailcodigo.SubjectEncoding = Encoding.GetEncoding("UTF-8");
+            emailcodigo.BodyEncoding = Encoding.GetEncoding("UTF-8");
+
+            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
+
+            smtpClient.UseDefaultCredentials = false;
+            smtpClient.Credentials = new NetworkCredential("loucomal111@gmail.com", "KDpl13579-12");
+            smtpClient.EnableSsl = true;
+            smtpClient.Send(emailcodigo);
+        }
 
         private void Voltar(object sender, MouseButtonEventArgs e)
         {
             TelaLogin window = new TelaLogin();
             window.Show();
             Hide();
+        }
+        private void LimpaCampos()
+        {
+            Email.Text = "";
+            NomeConta.Text = "";
+            Senha.Password = "";
+            ConfirmarSenha.Password = "";
+
         }
 
         private void Click_Cadastro(object sender, RoutedEventArgs e)
@@ -39,28 +66,22 @@ namespace Music_Preview
                 return;
             }
 
-            if (Senha.Password == ConfirmarSenha.Password)
+            else if (Senha.Password == ConfirmarSenha.Password)
             {
-                                
-                bool foiInserido = cUsuario.NovoCadastro(NomeConta.Text, Senha.Password, ConfirmarSenha.Password);
 
-                if (foiInserido == true)
-                {
-                    TelaLogin window = new TelaLogin();
-                    window.Show();
-                    Hide();
+                string email = Email.Text;
+                Random random = new Random();              
+                int codigo = random.Next(1, 100000);
+                LimpaCampos();
+                EnviandoCodigoCadastro(email, codigo);
+               
 
-                }
+                CodigoCadastro1 window = new CodigoCadastro1();
+                window.Show();
+                Hide();
 
-                else
-                {
-
-                    MessageBoxResult messageBox = MessageBox.Show("Há um cadastro selecionado, por favor limpe todos os campos antes de continuar!", "Atenção!", MessageBoxButton.OK, MessageBoxImage.Exclamation);
-
-                }
 
             }
-
         }
     }
 }
