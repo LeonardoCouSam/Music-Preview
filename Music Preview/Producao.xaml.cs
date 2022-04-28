@@ -22,18 +22,21 @@ namespace Music_Preview
         public Producao()
         {
             InitializeComponent();
+            AtualizaDataGrid();
         }
 
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
-        }
 
         private void Voltar(object sender, MouseButtonEventArgs e)
         {
             Menu window = new Menu();
             window.Show();
             Hide();
+        }
+        private void AtualizaDataGrid()
+        {
+            List<ProducaoProdutora> listaproducao = cProducaoProdutora.ObterTodasProducoes();
+            TabelaProducao.ItemsSource = listaproducao;
+            TabelaProducao.Items.Refresh();
         }
     }
 }
