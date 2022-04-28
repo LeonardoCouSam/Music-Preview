@@ -22,6 +22,7 @@ namespace Music_Preview
         public Sugestao()
         {
             InitializeComponent();
+            AtualizaDataGrid();
         }
 
         private void Voltar(object sender, MouseButtonEventArgs e)
@@ -29,6 +30,12 @@ namespace Music_Preview
             Menu window = new Menu();
             window.Show();
             Hide();
+        }
+        private void AtualizaDataGrid() 
+        {
+            List<SugestaoMusica> listasugestao = cSugestaoMusica.ObterTodasSugestoes();
+            TabelaSugestao.ItemsSource = listasugestao;
+            TabelaSugestao.Items.Refresh();
         }
     }
 }
