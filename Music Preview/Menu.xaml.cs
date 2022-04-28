@@ -49,7 +49,20 @@ namespace Music_Preview
 
         private void Botao_EnviarSugestao(object sender, RoutedEventArgs e)
         {
+            string nomeMusica = NomeMusica.Text;
+            string nomeArtista = NomeArtista.Text;
 
+            if (nomeMusica == "" || nomeArtista == "")
+            {
+                MessageBoxResult messageBox = MessageBox.Show("Preencha todos os campos obrigatórios!", "Atenção", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            else
+            {
+                bool foiInserido = cSugestaoMusica.NovaMusica(nomeMusica, nomeArtista);
+                LimpaCampos();
+
+            }
         }
 
         private void Botao_Producao(object sender, RoutedEventArgs e)
@@ -71,6 +84,11 @@ namespace Music_Preview
             TelaLogin window = new TelaLogin();
             window.Show();
             Hide();
+        }
+        private void LimpaCampos()
+        {
+            NomeMusica.Text = "";
+            NomeArtista.Text = "";
         }
     }
 }

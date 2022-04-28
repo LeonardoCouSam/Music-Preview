@@ -10,4 +10,9 @@ public class cSugestaoMusica
     {
         return ConsultasSugestaoMusica.ObterTodasSugestoes();
     }
+
+    public static bool NovaMusica(string nomeMusica, string nomeArtista)
+    {
+        return ConsultasSugestaoMusica.InserirMusica(nomeMusica, nomeArtista);
+    }
 }

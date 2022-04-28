@@ -10,7 +10,6 @@
         WindowStartupLocation="CenterScreen">
     <Grid Background="#FF1F1E1E">
         <TextBlock x:Name="Titulo" HorizontalAlignment="Center" Height="50" Margin="0,0,10,350" TextWrapping="Wrap" VerticalAlignment="Center" Width="151" Foreground="White" FontWeight="Bold" FontSize="30"><Run Language="pt-br" Text="Sugestões"/></TextBlock>
-        <DataGrid x:Name="TabelaSugestao" HorizontalAlignment="Center" Height="327" Margin="0,0,0,-70" VerticalAlignment="Center" Width="738" IsReadOnly="True" AutoGenerateColumns="False" Background="White" Foreground="Black"/>
         <Image x:Name="Botao_Voltar" HorizontalAlignment="Center" Height="30" Margin="0,0,760,390" VerticalAlignment="Center" Width="35" Source="/btnVoltar1.png" RenderTransformOrigin="0.5,0.5" MouseLeftButtonDown="Voltar">
             <Image.RenderTransform>
                 <TransformGroup>
@@ -21,6 +20,7 @@
                 </TransformGroup>
             </Image.RenderTransform>
         </Image>
+        <DataGrid x:Name="TabelaSugestao" HorizontalAlignment="Center" Height="327" Margin="0,0,0,-70" VerticalAlignment="Center" Width="758" IsEnabled="False"/>
 
     </Grid>
 </Window>

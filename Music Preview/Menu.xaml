@@ -32,8 +32,8 @@
         <Button x:Name="BotaoProducao" Content="Todos em Produção" HorizontalAlignment="Center" Height="40" Margin="0,0,-490,-190" VerticalAlignment="Center" Width="260" Background="#FF247BA0" BorderBrush="{x:Null}" FontFamily="Arial" Foreground="White" Click="Botao_Producao"/>
         <Button x:Name="BotaoTelaSugeridos" Content="Todos os Mais Sugeridos" HorizontalAlignment="Center" Height="40" Margin="0,0,-490,-330" VerticalAlignment="Center" Width="260" Background="#FF247BA0" BorderBrush="{x:Null}" FontFamily="Arial" Foreground="White" Click="Botao_TelaSugeridos"/>
         <Button x:Name="BotaoEnviarSugestao" Content="Enviar" HorizontalAlignment="Center" Height="16" Margin="0,0,-666,-80" VerticalAlignment="Center" Width="88" FontSize="10" Background="#FF247BA0" FontWeight="Bold" Foreground="White" BorderBrush="{x:Null}" Click="Botao_EnviarSugestao"/>
-        <Image x:Name="Logo" HorizontalAlignment="Center" Height="76" Margin="0,0,690,350" VerticalAlignment="Center" Width="97" Source="/Music_Preview_Logo_V3 3.png"/>
         <Image x:Name="BotaoComprar" HorizontalAlignment="Center" Height="39" Margin="0,0,-660,120" VerticalAlignment="Center" Width="40" Source="/carrinho de comprasV2.jpg"/>
+        <Image x:Name="Logo" HorizontalAlignment="Center" Height="76" Margin="0,0,690,350" VerticalAlignment="Center" Width="97" Source="/Music_Preview_Logo_V3 3.png"/>
 
 
     </Grid>
