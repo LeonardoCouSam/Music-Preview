@@ -30,5 +30,12 @@ namespace Music_Preview
             window.Show();
             Hide();
         }
+
+        private void FinalizarCompra(object sender, RoutedEventArgs e)
+        {
+            Menu window = new Menu();
+            window.Show();
+            Hide();
+        }
     }
 }

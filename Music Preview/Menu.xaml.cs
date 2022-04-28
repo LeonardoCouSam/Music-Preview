@@ -23,6 +23,8 @@ namespace Music_Preview
         public Menu()
         {
             InitializeComponent();
+            AtualizaDataGrid();
+            AtualizaDataGrid2();
 
         }
 
@@ -90,5 +92,25 @@ namespace Music_Preview
             NomeMusica.Text = "";
             NomeArtista.Text = "";
         }
+        private void AtualizaDataGrid()
+        {
+            List<SugestaoMusica> listasugestao = cSugestaoMusica.ObterTodasSugestoes();
+            TabelaTopSugestao.ItemsSource = listasugestao;
+            TabelaTopSugestao.Items.Refresh();
+        }
+        private void AtualizaDataGrid2()
+        {
+            List<ProducaoProdutora> listaproducao = cProducaoProdutora.ObterTodasProducoes();
+            TabelaTopProducao.ItemsSource = listaproducao;
+            TabelaTopProducao.Items.Refresh();
+        }
+
+        private void Botao_Comprar(object sender, MouseButtonEventArgs e)
+        {
+            Compra window = new Compra();
+            window.Show();
+            Hide();        
+        }
     }
 }
+
