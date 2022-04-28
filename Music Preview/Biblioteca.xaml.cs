@@ -22,6 +22,7 @@ namespace Music_Preview
         public Biblioteca()
         {
             InitializeComponent();
+            AtualizaDataGrid();
         }
 
         private void Voltar(object sender, MouseButtonEventArgs e)
@@ -29,6 +30,12 @@ namespace Music_Preview
             Menu window = new Menu();
             window.Show();
             Hide();
+        }
+        private void AtualizaDataGrid()
+        {
+            List<SuaBiblioteca> sualista = cSuaBiblioteca.ObterTodasSuasMusicas();
+            TabelaBiblioteca.ItemsSource = sualista;
+            TabelaBiblioteca.Items.Refresh();
         }
     }
 }
